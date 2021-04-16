@@ -1,0 +1,85 @@
+/******************************
+********* Global SCSS *********
+******************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fbfbfb;
+}
+
+#box {
+  width: 500px;
+  height: 440px;
+  margin: 0 auto;
+  box-shadow: 0 0 7px #afafaf;
+  padding: 10px;
+  background-color: white;
+}
+
+.nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 10px auto;
+  a {
+    color: $brand;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: $brandDark;
+      text-decoration: underline;
+    }
+  }
+  .router-link-exact-active {
+    color: $red;
+  }
+}
+
+.delete-item {
+  color: $red;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 200ms;
+  margin: 1px;
+  &:hover {
+    opacity: 1;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.todo-item {
+  display: flex;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  background: #e6e6e6;
+  justify-content: space-between;
+  &.completed {
+    text-decoration: line-through;
+  }
+}
+
+.error {
+  color: $red;
+  margin-bottom: 3px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.border-rad-3 {
+  border-radius: 3px;
+}

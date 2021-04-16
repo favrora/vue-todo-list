@@ -1,0 +1,67 @@
+/*****************************
+********* Modal SCSS *********
+*****************************/
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000087;
+  .close {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    font-size: 30px;
+    color: black;
+    opacity: 0.7;
+    transition: 200ms;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.modal-box {
+  position: relative;
+  width: 350px;
+  height: 120px;
+  background: #fff;
+  z-index: 100;
+  box-shadow: 0 0 15px #565656;
+}
+
+.modal-content {
+  padding: 30px 10px 10px;
+  .modal-options {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+      border: 1px solid #cdcdcd;
+      border-radius: 3px;
+      background: linear-gradient(#e1e1e1, #c4c4c4);
+      &:hover {
+        background: linear-gradient(#c4c4c4, #e1e1e1);
+      }
+    }
+    button:nth-of-type(1) {
+      margin-right: 5px;
+    }
+    button:nth-of-type(2) {
+      margin-left: 5px;
+      color: white;
+      background: $red;
+      &:hover {
+        background: darken($red, 5%)
+      }
+    }
+  }
+}

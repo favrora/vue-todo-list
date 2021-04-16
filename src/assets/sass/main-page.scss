@@ -1,0 +1,26 @@
+/*****************************
+******* Main Page SCSS *******
+*****************************/
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  h4:nth-of-type(1) {
+    width: 150px;
+  }
+  h4:nth-of-type(2) {
+    width: 295px;
+  }
+  h4:nth-of-type(3) {
+    width: 55px;
+  }
+}
+
+.todo-title {
+  width: 110px;
+}
+
+.todo-content {
+  width: 300px;
+}
