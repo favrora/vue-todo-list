@@ -1,45 +1,45 @@
-## Предпросмотр
+## Preview
 
 ![Preview](src/assets/img/preview.jpg)
 
-## Информация
+## Information
 
-Приложение состоит всего из 2х страниц. Главная страница, на которой отображены все заметки и страница редактирования, для создания и изменения заметок. Все действия в приложении происходят без перезагрузки страницы.
+The application consists of only 2 pages. The main page, which displays all the notes and the editing page for creating and editing notes. All actions in the application occur without reloading the page.
 
-Все данные хранятся в LocalStorage, поэтому даже если вы перезагрузите страницу, созданные заметки не будут утеряны. Еще я использовал Vue Router, официальную библиотеку маршрутизации, с помощью которой реализовал навигацию.
+All data is stored in LocalStorage, so even if you reload the page, the created notes will not be lost. I also used Vue Router, the official routing library, with which I implemented the navigation.
 
-В тех местах где нужно использовать подтверждение (диалоговое окно), я использовал модальное окно. Вот как оно выглядит:
+In those places where you need to use a confirmation (dialog box), I used a modal window. Here's what it looks like:
 
 <img src="src/assets/img/modal.jpg" width="50%">
 
-На странице редактирования добавил чекбоксы, при нажатии на которые текст заметок становится зачеркнутым. Немного о коде, код очень хорошо закоментирован, комментарии и сама программа на английском языке.
+On the editing page, I added checkboxes, when clicked, the text of the notes becomes strikethrough. A little about the code, the code is very well commented out, the comments and the program itself are in English.
 
-## Развертывание
+## Deployment
 
-Инструкция для развертывания приложения на локалке. 
+Instructions for deploying the application on the local.
 
-* Для начала вам нужно скопировать мой репозиторий данной командой:
+* First you need to copy my repository with this command:
 
     ```sh
     $ git clone https://github.com/favrora/vue-todo-list.git
     ```
 
-* Дальше перейдите в установленную папку в своем терминале:
+* Next, go to the installed folder in your terminal:
 
     ```sh
     $ cd vue-todo-list
     ```
 
-* Установите все зависимости:
+* Install all dependencies:
 
     ```sh
     $ npm install
     ```
 
-* Запустите сервер:
+* Run server:
 
     ```sh
     $ npm run serve
     ```
 
-* Откройте страницу: http://localhost:8080/
+* Open this page: http://localhost:8080/
