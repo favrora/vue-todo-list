@@ -44,4 +44,4 @@ Instructions for deploying the application on the local.
 
 * Open this page: http://localhost:8080/
 
-*Repository created from scratch by David Voskanyan (@favrora)*
+<br>*Repository created from scratch by David Voskanyan (@favrora)*
